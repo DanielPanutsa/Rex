@@ -115,10 +115,25 @@ body {
   display: flex;
 }
 .header__burger {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  right: 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   top: 20px;
+  padding: 0px 15px;
+  width: 100%;
+}
+.header__burger > svg {
+  width: auto !important;
+}
+
+.div {
+  width: calc(100% - 32px);
+  background-color: transparent;
 }
 
 .notTop {
