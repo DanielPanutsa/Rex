@@ -115,25 +115,25 @@ body {
   display: flex;
 }
 .header__burger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   position: absolute;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: row-reverse !important;
+          flex-direction: row-reverse !important;
   top: 20px;
   padding: 0px 15px;
   width: 100%;
 }
 .header__burger > svg {
-  width: auto !important;
+  width: 32px !important;
+  border: 1px dashed red;
 }
 
 .div {
   width: calc(100% - 32px);
   background-color: transparent;
+  border: 1px dashed red;
 }
 
 .notTop {
