@@ -127,13 +127,13 @@ body {
 }
 .header__burger > svg {
   width: 32px !important;
-  border: 1px dashed red;
+  border: 1px dashed transparent;
 }
 
 .div {
   width: calc(100% - 32px);
   background-color: transparent;
-  border: 1px dashed red;
+  border: 1px dashed transparent;
 }
 
 .notTop {
