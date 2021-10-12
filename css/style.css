@@ -23,7 +23,7 @@ body {
 
 .header {
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 9999;
   padding: 30px 0;
@@ -471,6 +471,7 @@ body {
   pointer-events: none;
   width: 469px;
   padding: 0;
+  margin: 0px 15px;
 }
 .collage_block_row {
   width: 469px;
