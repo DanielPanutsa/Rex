@@ -1,0 +1,461 @@
+/* SUPER Large desktops and laptops */
+@media (min-width: 1600px) {
+
+
+	.header{
+		padding: 40px 0;
+		&_shadow{
+			padding: 25px 0;
+		}
+		&__logo__text{
+		font-size: 18px;
+	    line-height: 19px;
+	    letter-spacing: 0.03em;
+	    margin: 0 40px;
+		}
+	}
+
+	.promo_text{
+    	font-size: 28px;
+	}
+	.promo_text2{
+	    font-size: 130px;
+	}
+}
+@media (max-width: 1600px) and (min-width: 1200px) {
+	.footer{
+		height: 640px;
+		width: 100%;
+	}
+}
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+	
+  .promo_text{
+  	margin-bottom: 40px;
+  }
+  .promo_text2{
+  	font-size: 80px;
+  }
+  .promo_text3{
+  	font-size: 36px;
+    margin-bottom: 40px;
+	}
+
+
+  .person1{
+  	width: 230px;
+    left: 197px;
+    bottom: 121px;
+    display: flex;
+  }
+  .person2{
+  	width: 270px;
+    left: 30px;
+    bottom: -34px;
+    display: flex;
+  }
+  .person3{
+  	width: 602px;
+    left: 0px;
+    bottom: -62px;
+    display: flex;
+  }
+  .earth{
+  	display: flex;
+  }
+
+  .section_what_video{
+  	height: 380px;
+  	width: 380px;
+  	&_play{
+  		background-size:50px;
+  		&:hover{
+  			background-size: 60px;
+  		}
+  	}
+  	&_pause{
+  		background-size: 60px;
+  	}
+  	&_play, &_bg, &_video, &_pause{
+  		height: 380px;
+  		width: 380px;
+  	}
+  }
+
+  .section_what_about_answer_text{
+  	font-size: 16px;
+  }
+
+  .block1, .block2{
+  	padding: 30px;
+  	&_head{
+  		font-size: 18px;
+  	}
+  	&_text{
+  		font-size: 14px;
+  	}
+  }
+
+  .section_running_block{
+  	padding: 115px 40px;
+  	&_head{
+  		font-size: 34px;
+  	}
+  	&_text{
+  		font-size: 17px;
+  	}
+  }
+
+  .section_photo_head{
+  	font-size: 34px;
+  }
+
+}
+
+
+$colorbl1:rgb(216, 230, 249);
+$colorbl2:rgb(169, 205, 255);
+
+@media (max-width: 992px) {
+	.blck3{
+		background-color: $colorbl2;
+	}
+	.blck4{
+		background-color: $colorbl1;
+	}
+	.blck5{
+		background-color: $colorbl2;
+	}
+	.blck6{
+		background-color: $colorbl2;
+	}
+	.blck7{
+		background-color: $colorbl2;
+	}
+	.blck5{
+		background-color: $colorbl1;
+	}
+}
+  
+/* Portrait tablets and small desktops */
+@media screen and (max-width: 991px) {
+
+	.header__logo__text{
+		display: none;
+	}
+
+	.section_what{
+		&> div{
+		flex-direction: row;
+		}
+		&_about, &_video{
+			flex: none;
+			max-width: 100%;
+		}
+	}
+
+	.section_what_about, .section_what_video{
+	  	position: relative;
+	    padding-right: 15px;
+	    padding-left: 15px;
+	  }
+
+	  .section_what_video{
+	  	width:100%;
+	  	&_play, &_bg, &_video, &_pause{
+	  		margin: auto;
+	  		width: 650px;
+	  	}
+	  }
+
+	  .section_what_about{
+		  	&_answer{
+		  		font-size: 43px;
+		  	&_text{
+		  		font-size: 18px;
+		  	}
+		  }
+  		}
+
+  	.section{
+  		margin-bottom:0;
+  	}
+  	.footer{
+  		position: relative;
+  	}
+  	.section_running_block{
+	  	padding: 90px 40px;
+	  	background: rgb(234, 243, 253);
+	  	&_head{
+	  		font-size: 34px;
+	  	}
+	  	&_text{
+	  		font-size: 18px;
+	  	}
+	  }
+
+	  .form_block_form{
+    		justify-content: center;
+	  }
+
+	  .footer{
+	  	height: 870px;
+	  }
+
+	  .link{
+	  	font-size: 12px;
+	  }
+
+	  .section_promo_container{
+	  	align-items: flex-start;
+    margin-top: 80px;
+	  }
+
+	  .col-lg-6-g{
+	  	width: 60%;
+	  }
+
+	  .form_rex_link > svg{
+	  	height: 40px;
+	  }
+}
+  
+/* Landscape phones and portrait tablets */
+@media screen and (max-width: 767px) {
+
+	body{
+		margin:0;
+		padding: 0;
+	}
+
+	.container{
+		max-width: 100%;
+	}
+
+	.header{
+		width: 99.9%;
+	  padding: 15px 0px;
+		&_line{
+	    margin: 0px;
+	    flex-direction: column;
+		}
+		&__logo{
+			width: 100%;
+			display: flex;
+			& > a{
+				display: flex;
+				align-items: flex-end;
+			}
+    	&__text{
+				display: none;
+				}
+			}
+			&__menu{
+				width:100%;
+				display: none;
+				flex-direction: column;
+				margin: 20px 0 0px 0;
+			}
+			&__burger{
+			  display: flex;
+			  &>svg{
+			  	
+			  }
+			}
+		}
+
+		.section_promo_container{
+			justify-content: center;
+	    align-items: flex-start;
+	    margin-top: 40px;
+		}
+
+		.promo_text2{
+			font-size: 60px;
+		}
+
+		.promo_text3{
+			font-size: 24px;
+		}
+
+		.col-lg-6-g{
+			width: auto;	
+		}
+
+		.person1{
+			width: 170px;
+	    left: 96px;
+	    bottom: 49px;
+		}
+
+		.person2{
+			width: 220px;
+	    left: -40px;
+	    bottom: -61px;
+		}
+
+		.person3{
+			width: 511px;
+		  left: -89px;
+		  bottom: -75px;
+		}
+
+		.link{
+		width: 100%;
+		border-bottom: none;
+    text-align: center;
+    padding: 8px 0px;
+    font-size: 16px;
+  	}
+
+		.section_what{
+			&_container{
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			& > div{
+				max-width:540px;				
+			}
+			&_video > div, video{
+				max-width: 100%;
+				width: 100%;
+			}
+		}
+
+		.section_table{
+			& > div{
+				max-width: 540px;
+			}
+			&_container{
+				& > div{
+					width: 100%;
+				}
+			}
+		}
+
+		.block1, .block2{
+			&_head{
+				font-size:22px;
+			}
+			&_text{
+				font-size:16px;
+				font-weight: 500;
+			}
+		}
+
+		.blck2{
+			background-color: $colorbl2;
+		}
+		.blck3{
+			background-color: $colorbl1;
+		}
+		.blck4{
+			background-color: $colorbl2;
+		}
+		.blck5{
+			background-color: $colorbl1;
+		}
+		.blck6{
+			background-color: $colorbl2;
+		}
+		.blck7{
+			background-color: $colorbl1;
+		}
+		.blck8{
+			background-color: $colorbl2;
+		}
+
+		.section_running{
+			& > div{
+				max-width: 540px;
+			}
+		}
+
+		.section_place{
+			& > div{
+				max-width:540px;
+			}
+		}
+
+		.section_photo{
+			&_head{
+				max-width: 540px;
+				margin: 0 auto 68px;
+			}
+		}
+
+		.form_block_form{
+			flex-direction: column;
+		}
+
+		.form_block_form_button{
+			margin: 50px auto 0;
+		}
+
+		.form_block_links{
+			margin-top: 50px;
+			margin: 50px auto 0;
+			flex-direction: row;
+			& > a{
+				margin: 8px;
+			}
+		}
+				
+
+		.footer{
+			height: 100%;
+			& > div{
+				max-width: 540px;
+				margin: 0 auto 50px;
+			}
+		}
+
+		.form_rex{
+			flex-direction: column;
+			margin-top: 50px;	
+			& > a{
+				margin: 0 auto;	
+			}
+			& > span{
+				margin: 30px auto 0;
+			}
+			}
+		}
+  
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .form_block_form{
+  	flex-direction: 	column;
+  }
+  .section_promo{
+  	padding: 40px 0 100px;
+  }
+}
+
+@media (max-width: 412px) {
+  .section_what_video_play, .section_what_video_video{
+  	max-width: 335px;
+  } 
+}
+  
+/* Small phones */
+@media (max-width: 320px) {
+	.section_running_block{
+      padding: 45px 10px;
+    }
+
+   .form_block_head{
+   	font-size:35px;
+   }
+   .promo_text2{
+   	font-size: 40px;
+   }
+} 
+
+@media (max-width: 287px) {
+	.section_running_container, .section_running_block{
+		padding:0;
+	}
+
+	}

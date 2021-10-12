@@ -1,0 +1,41 @@
+/* Обнуление */
+html{
+    height: 100%;
+    overflow-x:hidden;
+    width: 100%;
+}
+
+body{
+    width:100%;
+}
+
+*, :after, :before {
+box-sizing: border-box;
+}
+*{
+margin: 0;
+padding: 0;
+}
+/* === Import Bootstrap functions and variables === */
+/* Change link-decoration */
+ $link-decoration: none;
+/*--------------------------------------------------------------------*/
+a{
+cursor: pointer;
+text-decoration: none;
+}
+img{
+    border-style: none;
+}
+svg{
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    }
+
+video{
+    max-width:450px;
+}
+
+
+/* --------- */
